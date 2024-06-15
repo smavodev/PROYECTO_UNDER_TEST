@@ -52,6 +52,7 @@ empleado_01();
 
 // funcionExpresada();
 
+// const funcionExpresada = funcion 
 const funcionExpresada = function (){
   let nombre = "Arturo";
   console.log(`Mi nombre es: ${nombre}`);
