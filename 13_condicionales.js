@@ -160,3 +160,40 @@ console.log(puedeVotarYConducir(19, true, 'USA'));
 console.log(puedeVotarYConducir(17, true, 'México'));
 console.log(puedeVotarYConducir(30, true, 'Perú'));
 console.log(puedeVotarYConducir('USA',true, 30));
+
+
+
+// Planificacion de su desarrollo (DESARRROLLAR SOFTWARE, AUTOMATIZACIONES)
+// * PRUEBA 
+// * Crear una funcion, al ingresar el nombre de un alumno y que el promedio sea mayor a 18 (Excelente), 15 (Bueno), 10 (Malo)
+
+// ^^ variables = promedio y alumno
+// ^^ condiciones: 
+// * si es mayor 18 y menor o igual 20 (excelente) 
+// * si es mayor 15 y menor o igual 18 (Bueno)  
+// * si es mayor 10 y menor o igual 15 (regular)
+// * si es mayor 1 y menor o igual 10 (Malo)
+// ^^ Consideracion: La nota va de 1 a 20, si ingresa un numero mayor o menor al rango (1 al 20) Promedio Invalido
+
+
+function evaluarDesempeno(nombre, promedio) {
+  if (promedio >= 18 && promedio <= 20) {
+      console.log(`${nombre} tiene un desempeño Excelente`);
+  } else if (promedio >= 15 && promedio < 18) {
+      console.log(`${nombre} tiene un desempeño Bueno`);
+  } else if (promedio >= 10 && promedio < 15) {
+      console.log(`${nombre} tiene un desempeño Regular`);
+  } else if (promedio >= 1 && promedio < 10) {
+      console.log(`${nombre} tiene un desempeño Malo`);
+  } else {
+      console.log("Promedio inválido. El promedio debe estar entre 1 y 20.");
+  }
+}
+
+// Ejemplos de uso
+evaluarDesempeno("Juan", 19); // "Juan tiene un desempeño Excelente"
+evaluarDesempeno("Ana", 16); // "Ana tiene un desempeño Bueno"
+evaluarDesempeno("Pedro", 13); // "Pedro tiene un desempeño Regular"
+evaluarDesempeno("Lucía", 5); // "Lucía tiene un desempeño Malo"
+evaluarDesempeno("Luis", 20); // "Luis tiene un desempeño Excelente"
+evaluarDesempeno("Mario", 0); // "Promedio inválido. El promedio debe estar entre 1 y 20."
