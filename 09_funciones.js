@@ -62,13 +62,21 @@ funcionExpresada();
 
 
 // * funciones declaradas
+function sumaDeclarada1(a, b){
+  let resultado = a + b
+  return resultado
+}
+console.log(sumaDeclarada1(15, 20))
+
+
 console.log(sumaDeclarada(5,5))
 
 function sumaDeclarada(a, b){
   let resultado = a + b
+  console.log(`Resultado de la funcion sumaDeclarada ${resultado}`)
   return resultado
 }
-console.log(sumaDeclarada(5,2))
+sumaDeclarada(5,2)
 
 // * funciones expresadas / anonimas
 const sumaExpresada = function (a, b) {
