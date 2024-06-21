@@ -61,3 +61,18 @@ const funcionExpresada = function (){
 funcionExpresada();
 
 
+// * funciones declaradas
+console.log(sumaDeclarada(5,5))
+
+function sumaDeclarada(a, b){
+  let resultado = a + b
+  return resultado
+}
+console.log(sumaDeclarada(5,2))
+
+// * funciones expresadas / anonimas
+const sumaExpresada = function (a, b) {
+  return a + b
+}
+
+console.log(sumaExpresada(5,2))
