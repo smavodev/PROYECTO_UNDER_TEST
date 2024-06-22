@@ -51,3 +51,10 @@ console.log(colores);
 colores.forEach(function (objeto, posicion) {
   console.log(`<li id="${posicion}">${objeto}</li>`);
 });
+
+
+// EJEMPLO DE LA SECCION 14 CICLOS
+const numeros_enteros = [10,'11',12,13,14,15,16,17,18,'19',20];
+numeros_enteros.forEach(function (objeto, posicion) {
+  console.log(`${posicion} - ${objeto}`)
+});
