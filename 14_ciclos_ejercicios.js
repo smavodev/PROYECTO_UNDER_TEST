@@ -14,6 +14,7 @@ function tablaWhile(contador, inicio, fin) {
   }
 }
 tablaWhile(11, 1, 12);
+tablaWhile(11, 1, 12);
 
 
 /**
@@ -40,12 +41,11 @@ tablaDoWhile(3, 1, 12);
  */
 function funciontabla3(multi, init, limite) {
   let multiplicador = multi;
-  for (let operador = init; operador < limite; operador++) {
+  for (let operador = init; operador <= limite; operador++) {
     console.log(`${multiplicador} x ${operador} = ${multiplicador * operador}`);
   }
 }
-funciontabla3(5, 10, 25);
-
+funciontabla3(5, 10, 25)
 
 /**
  * Esta función imprime la tabla de multiplicar de un número dado usando un arreglo de múltiplos específicos.
