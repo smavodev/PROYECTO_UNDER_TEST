@@ -1,3 +1,4 @@
+// **********     Curso JavaScript: 15. Try Catch **********
 
 // * ** TRY CATCH
 // ^^ El bloque try-catch es una estructura en JavaScript que se utiliza para manejar errores de manera controlada. 
