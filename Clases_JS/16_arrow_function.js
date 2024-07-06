@@ -72,14 +72,14 @@ const cadenaInvertida2 = (cadena) => {
 // cadenaInvertida2("hola 1");
 // cadenaInvertida2(6);
 
-const cadenaInvertida1 = (cadena) => {
+const cadenaInvertida1 = (cadena = "") => {
   !cadena
     ? console.log("No has ingresado una cadena")
     : typeof cadena !== "string"
     ? console.log("No es una cadena")
     : console.log(cadena);
 };
-// cadenaInvertida1();
+cadenaInvertida1();
 // cadenaInvertida1("hola");
 // cadenaInvertida1(5);
 
