@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node 19_import_ec6.js"
+  }
+}
