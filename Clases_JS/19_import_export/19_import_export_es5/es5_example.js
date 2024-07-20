@@ -10,5 +10,3 @@ function sumar(num1,num2) {
 const restar = function(a = 0, b = 0){
     return a - b
 }
-
-module.exports = {sumar, restar};

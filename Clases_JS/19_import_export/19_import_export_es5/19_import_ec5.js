@@ -6,7 +6,6 @@
 // * ES5 --> FORMA ANTIGUA
 // * modulos common.js
 
-const {restar, sumar} = require('./es5_example.js')
 
 const resultado1 = sumar(5,8);
 console.log(resultado1)
