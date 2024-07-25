@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con OOCSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h3>Formulario aplicando metodologia OOCSS</h3>
+    <div class="container">
+        <form class="paquito">
+            <h1 class="paquito-title">Formulario de Contacto</h1>
+            <div class="paquito-group">
+                <label class="paquito-label" for="name">Nombre:</label>
+                <input class="paquito-input" type="text" id="name" name="name">
+            </div>
+            <div class="paquito-group">
+                <label class="paquito-label" for="email">Correo Electrónico:</label>
+                <input class="paquito-input" type="email" id="email" name="email">
+            </div>
+            <div class="paquito-group-interno">
+                <label class="paquito-label pruebas" for="message">Mensaje:</label>
+                <textarea class="paquito-textarea" id="message" name="message"></textarea>
+            </div>
+            <button class="button button-primary" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

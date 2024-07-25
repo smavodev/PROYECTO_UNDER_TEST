@@ -1,0 +1,72 @@
+/* OOCSS (Object-Oriented CSS)
+Descripción
+OOCSS es una metodología que promueve la separación de estructura y apariencia, 
+y el uso de clases reutilizables y consistentes. El objetivo es crear "objetos" 
+de CSS que puedan ser aplicados en diferentes contextos.
+
+- Separación de estructura y apariencia: Dividir los estilos en aquellos que definen 
+la estructura (layout) y aquellos que definen la apariencia (skin).
+- Clases reutilizables: Crear clases que puedan ser aplicadas en múltiples elementos 
+para reutilizar estilos. */
+
+
+.container {
+    width: 100%;
+}
+
+.paquito {
+    display: flex;
+    flex-direction: column;
+    background: yellow;
+}
+
+.paquito-title {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.paquito-group {
+    margin-bottom: 20px;
+}
+
+.paquito-group-interno {
+    margin-bottom: 40px;
+    background: violet;
+}
+
+.paquito-label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.pruebas {
+    font-size: 2em;
+}
+
+.paquito-input,
+.paquito-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background: violet;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+  }
+  
+  .button-primary {
+    background-color: #007BFF;
+    color: white;
+  }

@@ -1,0 +1,90 @@
+/* BEM (Block, Element, Modifier)
+Descripción
+BEM es una metodología para nombrar clases CSS de manera que reflejen la estructura de 
+un componente y su relación con otros componentes. BEM divide el nombre de clase en tres partes:
+
+Block: Representa un componente independiente y reutilizable (e.g., button).
+Element: Representa una parte del bloque que tiene una función específica (e.g., button__icon).
+Modifier: Representa una variación o estado del bloque o elemento (e.g., button--primary). */
+
+/* 
+form  
+    h1 
+    div 
+        label 
+        input  
+*/
+
+.form__container {
+    width: 100%;
+}
+
+.paquito {
+    display: flex;
+    flex-direction: column;
+    background: yellow;
+}
+
+/*
+px = pixeles 16px
+em = 1em = 16px
+rem = 1rem 16px
+% = elemento padre
+*/
+
+.paquito__title {
+    font-size: 32px;
+    /* font-size: 2em; */
+    /* margin-bottom: 60px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 10px; */
+    margin-bottom: 60px;
+}
+
+
+.paquito__group {
+    margin-bottom: 20px;
+}
+
+.paquito__group__interno {
+    margin-bottom: 40px;
+    background: violet;
+}
+
+.paquito__label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.pruebas {
+    font-size: 2em;
+}
+
+.paquito__input,
+.paquito__textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background: violet;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+  }
+  
+  .button--primary {
+    background-color: #007BFF;
+    color: white;
+  }
