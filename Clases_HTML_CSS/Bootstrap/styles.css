@@ -1,0 +1,23 @@
+
+/* https://getbootstrap.com/docs/4.6/getting-started/introduction/ */
+
+:root {
+    --color-base: #F7F312;
+    --letra-titulo: 1em;
+}
+
+
+
+.form_pruebas {
+    margin-bottom: 40px;
+    background: var(--color-base);
+}
+
+.card-body {
+    padding: 2em;
+    margin: 1em;
+}
+
+.demo {
+    font-size: var(--letra-titulo);
+}
