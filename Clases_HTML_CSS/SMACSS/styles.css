@@ -1,0 +1,98 @@
+/* SMACSS (Scalable and Modular Architecture for CSS)
+Descripción
+SMACSS es una metodología que organiza los estilos CSS en cinco 
+categorías para mejorar la escalabilidad y mantenibilidad del código:
+
+- Base: Estilos base aplicados a etiquetas HTML (e.g., html, body, a).
+- Layout: Estilos que definen la estructura general de la página (e.g., 
+cabeceras, pies de página).
+- Module: Estilos para componentes específicos de la interfaz (e.g., 
+tarjetas, botones).
+- State: Estilos que definen estados específicos de los elementos (e.g., 
+activo, deshabilitado).
+- Theme: Estilos para variaciones de temas (e.g., temas claro y oscuro). */
+
+/* SMACSS */
+
+/* Base */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Layout */
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    background: yellow;
+  }
+  
+  .form__group {
+    margin-bottom: 20px;
+  }
+  
+  /* Module */
+  .form__title {
+    font-size: 2em;
+    margin-bottom: 60px;
+  }
+  
+  .form__label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .form__input,
+  .form__textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+  }
+  
+  .button--primary {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  /* State */
+  .is-active {
+    border: 2px solid green;
+  }
+  
+  /* Theme */
+  .theme-dark .form-container {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  .theme-dark .form__input,
+  .theme-dark .form__textarea {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  .theme-dark .button--primary {
+    background-color: #0056b3;
+  }
+  
