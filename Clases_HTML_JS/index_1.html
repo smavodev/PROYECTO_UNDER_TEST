@@ -14,7 +14,7 @@
     <form class="columnas">
          <h1>Clase HTML + JS</h1>
         <div class="etiqeta_1 form-group row">
-            <label  class="col-sm-4 col-form-label" for="firstname">Primera nota</label>
+            <label  class="col-sm-4 col-lg-2 col-form-label" for="firstname">Primera nota</label>
             <div class="col-sm-8 col-lg-10">
                 <input class="form-control" type="text" id="firstname" name="nota1" placeholder="Ingresa la primera Nota">
             </div>
@@ -38,13 +38,10 @@
     </form>
 
     <script>
-
-        // document.getElementById('ejecutar').addEventListener('click', function (evt) {
-        //     event.preventDefault()
-
-        document.getElementById('ejecutar').addEventListener('click', (evt) => {
+        // Usar addEventListener con funciones 
+        document.getElementById('ejecutar').addEventListener('click', function (evt) {
             event.preventDefault()
-            
+
             const nota1 = document.getElementById('firstname').value
             const nota2 = document.getElementsByName('nota1')[1].value
 
