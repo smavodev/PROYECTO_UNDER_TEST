@@ -42,7 +42,8 @@
         document.getElementById('ejecutar').addEventListener('click', function (evt) {
             event.preventDefault()
 
-            const nota1 = document.getElementById('firstname').value
+            // const nota1 = document.getElementById('firstname').value
+            const nota1 = document.querySelector('#firstname').value
             const nota2 = document.getElementsByName('nota1')[1].value
 
             const num1 = parseFloat(nota1)
@@ -64,7 +65,7 @@
 
             const suma = (num1 + num2) / 2
 
-            document.getElementById('resultado').innerHTML = `La suma de las notas es: <strong>${suma}</strong>`
+            document.getElementById('resultado').innerHTML = `El promedio de las notas es: <strong>${suma}</strong>`
             // document.getElementById('resultado').value = suma
         })
     </script>
