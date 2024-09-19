@@ -1,0 +1,23 @@
+{
+  "name": "playwright_js_demo",
+  "version": "0.1.0",
+  "description": "Es un proyecto de prueba con playwright",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx playwright test",
+    "start:chromiun": "npx playwright test --project=chromium",
+    "start:headless": "npx playwright test --headed",
+    "start:firefox": "npx playwright test --headed --project=Firefox",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "Javascript",
+    "Playwright"
+  ],
+  "author": "Sergio",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^22.5.5"
+  }
+}
